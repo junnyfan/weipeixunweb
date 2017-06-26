@@ -1,0 +1,55 @@
+.logo {width: 141px; margin-top: 6px;}
+.login_top {background:#4292EC;}
+.red_text{color:#000; font-size:18px;}
+.red_time {color:red;}
+.grey_text {color:#999;}
+.form-group img{padding-top:5px;}
+.queren {margin-right:20px;}
+.glyphicon-user, .glyphicon-credit-card, .glyphicon-phone {color:#fff;}
+.name_D {width: 136px;margin-top: -48px;}
+.course img {width:20px;height:20px}
+.manfen {margin-left:25px;}
+.pull-left img {width:70px;height:100px;}
+
+@media (min-width: 300px) {
+  .nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .nav-tabs.nav-justified > li > a {
+    margin-bottom: 0;
+	border:0;
+  }
+}
+
+.nav-tabs.nav-justified > li > a {
+  margin-right: 0;
+  border-radius:0;}
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:focus {
+ border:0;}
+
+@media (min-width: 300px) {
+  .nav-tabs.nav-justified > li > a {
+  /*  border-bottom: 1px solid #dddddd;
+    border-radius: 4px 4px 0 0;*/
+  }
+  .nav-tabs.nav-justified > .active > a,
+  .nav-tabs.nav-justified > .active > a:hover,
+  .nav-tabs.nav-justified > .active > a:focus {
+    border-bottom: 2px solid #0094ff;
+  }
+}
+.nav-tabs > li > a:hover {  border-color: #eeeeee #eeeeee #dddddd;}
+.nav-tabs.nav-justified{margin-bottom:15px;border-bottom:1px solid #dddddd; }
+.navbar.navbar-default{border-bottom:1px solid #dddddd;}
+
+.h{height:10px;line-height:10px; font-size:0;}
+.h20{height: 20px;}
+.panel-heading{font-size: 20px;}
+.font16{font-size:16px;}
+.page-title{ font-size:16px; text-align:center; padding-top:12px;}
+
+.container {position:relative;}
+#Div2 {background-color: #f0f0f0; display: none; width:80%;position:absolute; left:10%;top:20%;padding:0;}

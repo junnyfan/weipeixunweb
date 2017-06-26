@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+/*重置*/
+
+
+html,body{
+    background-color: #f0f0f0;
+	margin:0;
+	position:relative;
+	width: 100%;
+    height: 100%;
+	
+}
+body{}
+input{
+	border-style:none;
+	outline:none;
+	
+}
+*{
+	margin:0;
+	padding:0;
+	font-size:14px;
+	font-family: Arial, '微软雅黑',sans-serif;
+	font-weight:normal;
+}
+a{
+	text-decoration:none;
+	color:#333;
+}
+img{
+	display:block;
+}
+li{list-style:none;}
+ul{
+	list-style:none;
+}
+/*................输入框提示样式.......................*/
+/* 通用 */
+::-webkit-input-placeholder { color:#ccc;}
+::-moz-placeholder { color:#fccc; } /* firefox 19+ */
+:-ms-input-placeholder { color:#fccc;} /* ie */
+input:-moz-placeholder { color:#fccc;}
+
+/*................输入框提示样式-结束.......................*/
+
+/*订单内容头部*/
+
+.order_box{ margin-bottom: 10px;}
+.order_header{ background-color:#fff; border-bottom: 1px solid #f0f0f0;  padding: 0 10px 0 10px; overflow: hidden;}
+.order_state{ float: left;line-height: 42px;}
+.order_state span{ color: #01b0f1;}
+
+.action_btn{ background-color: #84c101; border-radius: 4px; height: 28px; padding:0 12px 0 12px;line-height:28px ; margin:7px 0 7px 0 ; text-align: center; float: right; color: #fff; margin-right: 8px;}
+.action_btn:hover{ background-color: #6d9e03;} 
+.order_track_btn{ background-color: #84c101; border-radius: 4px; height: 28px; padding:0 12px 0 12px;line-height:28px ;margin-top:7px ;  text-align: center; float: right; color: #fff;}
+.order_track_btn:hover{ background-color:#6d9e03; }
+
+/*订单状态筛选*/
+.filter_box{ background-color:#fff;  margin-bottom:0px;overflow: hidden; position: fixed;  width: 100%; z-index: 10; border-bottom: 1px solid #dadada;}
+.filter_box p{
+	font-size: 16px;
+	color: #0066ff;
+	
+	text-align: center;
+	padding: 20px;
+}
+.filter_box a{ width: 25%; float:left; text-align: center;min-height: 44px;line-height: 44px;}
+.filter_ctn_addclass{ color: #84C101; border-bottom: 3px solid #84C101;}
+.filter_ctn{ position: relative;}
+
+.filter_ctn span{ background-color:rgba(255,71,71,0.85);line-height: 1; color: #fff; font-size: 11px; border-radius:100px;  position: absolute;top: 4px;  right:-8px;display: inline-block; padding: 3px 6px;  } 
+
+/*订单内容*/
+.order_ctn_box{ position: relative; padding-top: 10px; border-bottom: 1px solid #dadada; padding-bottom: 10px;background-color:#fafafa;}
+.order_ctn{  margin-left: 25%;}
+.product_img{ position: absolute; top:35px; left:10px; width: 20%; max-width: 100px; overflow: hidden;border-radius: 2px; border:solid 1px #f0f0f0;margin-top: 10px;background-color: #fff;}
+.product_img img{width:100%;}
+.order_number{ }
+.test_width{ float: left; height: 0px;width: 20%;}
+.order_ctn div{ overflow: hidden;}
+.order_ctn div h1{ float: left; line-height: 30px;font-size: 14px;}
+.order_ctn div p{  font-size:14px;line-height: 30px;color: #333;}
+
+
+
+
+/*无订单提示*/
+.nothing_ctn_box{   overflow: hidden; height: 300px;  margin-top: 100px; text-align: center; display:none; }
+.nothing_ctn_box img{ width: 120px; margin: 0 auto; margin-bottom: 10px;opacity: 0.6;}
+.nothing_ctn_box p{ color: #999;padding-top: 20px;}
+
+
+
+iframe[name="iframe_box"]{ height: 100%; width: 100%; overflow: hidden; border: none; margin-top: 52px;}
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+/*重置*/
+
+
+html,body{
+    background-color: #f0f0f0;
+	margin:0;
+	position:relative;
+	width: 100%;
+    
+	
+}
+body{}
+input{
+	border-style:none;
+	outline:none;
+	
+}
+*{
+	margin:0;
+	padding:0;
+	font-size:14px;
+	font-family: Arial, '微软雅黑',sans-serif;
+	font-weight:normal;
+}
+a{
+	text-decoration:none;
+	color:#333;
+}
+img{
+	display:block;
+}
+li{list-style:none;} 
+
+/*顶部*/ 
+.header_box{ height: 56px; width: 100%; overflow: hidden; background: url(../img/header_L_img@2x.png) no-repeat left center;background-size: 157px; background-color:#66cc33 ;}
+.header_box img{ position: absolute; right: 0px; top: 8px; width:50px;}
+.menu_ctn_box1 { background-color: #fff; height: 114px; width: 100%; border-bottom: 1px solid #dadada;}
+.menu_ctn_box1 a{ float: left; height: 100%; width: 33.33%; text-align: center; box-sizing: border-box; padding-top: 70px; background-size: 26px;}
+.menu_ctn_box1 a p{ color: #333;}
+.menu_ctn1{ background: url(../img/my_order_icon1@2x.png) no-repeat center 26px; border-right: 1px solid #f0f0f0;}
+.menu_ctn2{ background: url(../img/my_order_icon2@2x.png) no-repeat center 26px; border-right: 1px solid #f0f0f0;}
+.menu_ctn3{ background: url(../img/my_order_icon3@2x.png) no-repeat center 26px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,103 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+*{padding:0;margin:0;padding:0;font:normal 16px Microsoft Yahei}
+h1,h2,h3{ font-weight:normal;width:100%;}
+a{color:white; text-decoration:none;cursor:pointer;}
+li{list-style:none;}
+.marT10{margin-top:10px;}
+.marT20{margin-top:20px;}
+.marT30{margin-top:30px;}
+.marT60{margin-top:60px;}
+.marL20{margin-left:20px;}
+img{border:none;width:auto;}
+
+/*这里是登录页*/
+header{height:60px;line-height:60px; background-color:#2090ff;}
+.jx_banner{background: url(/image/bj2013.gif) no-repeat;width:100%;height: 200px;margin-top: 1px;}
+.logoBox{margin-left:10px;position:relative;}
+.logotext{position:absolute;left:124px;top:14px;font-size:24px;color:white;}
+.content{width:80%;margin:0 auto;}
+/*.user_right{width:34px;height:34px; background:url(/image/ico_right.png) no-repeat;position:absolute;right:-44px;top:9px;}
+.user_erro{width:34px;height:34px; background:url(/image/ico_erro.png) no-repeat;position:absolute;right:-44px;top:9px;}*/
+.password_pic{width:100%;height:58px;display:block;background-color:red;background:url(/image/ico_password.png) no-repeat left center;position:relative;}
+.password{width:100%;height:58px;display:block;background-color:red;background:url(/image/ico_username.png) no-repeat left center;position:relative;}
+.password_input{border:none;width:80%;line-height:58px;position:absolute;left:62px;top:0;font-size:24px;height:58px;display:block;border:solid 2px #3099ff;-moz-border-radius:0 16px 16px 0;-webkit-border-radius:0 16px 16px 0;border-radius:0 16px 16px 0;}
+.labeltext{color:#2090ff;font-size:18px;}
+.btn_login{display:block;width:100%;height:58px;font-size:24px;line-height:58px;color:white;border:none;text-align:center;-moz-border-radius: 16px;-webkit-border-radius:16px;border-radius:16px;  background-color:#219fff;font-size:24px;}
+.btn_login:hover{ background-color:#0d88e6;}
+/*这里是登录页结束*/
+
+/*这里是账号退出*/
+.quitBox{margin-top:110%;}
+.inftext{font-size:24px;text-align:center;color:#a9aeaf;}
+
+/* 这里是列表页*/
+.table1{}
+.title_ico{width:34px;position:absolute;left:20px;top:0px;}
+.titleBox{height:70px;line-height:70px; background-color:#2090ff;position:relative;cursor:pointer;}
+.list_title{height:70px;line-height:70px;position:absolute;left:60px;top:0;font-size:20px;color:white;}
+.titlePic{display:block;position:absolute;right:20px;top:20px}
+.titlePic:hover{transform:rotate(180deg);
+-ms-transform:rotate(180deg); 	
+-moz-transform:rotate(180deg); 	
+-webkit-transform:rotate(180deg); 
+-o-transform:rotate(180deg); }
+
+
+.list_bg{ background-color:#f0f8fa;border-top:solid 1px #FFF;border-bottom:solid 1px #bbbfc0;}
+.listBox:active{ background-color:#1e8cfa;color:white;} 
+.listBox{height:50px;width:100%;line-height:50px;display:block;border-right:solid 8px #1e8cfa;color:#222222;font-size:20px;position:relative;-webkit-box-sizing:border-box; box-sizing:border-box;}
+.list_text{position:absolute;left:80px;top:15px}
+
+.share{display:block;width:25px;height:60px;position:absolute;right:10px;top:0;}
+
+/**checkbox变大**/
+label {
+	display: inline;
+}
+
+.regular-checkbox {
+	display: none;
+}
+
+.regular-checkbox + label {
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+	vertical-align:text-bottom; margin-bottom:-8px;margin-right:10px;
+}
+
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked + label {
+	background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.regular-checkbox:checked + label:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #99a1a7;
+}
+
+
+.big-checkbox + label {
+	padding: 18px;
+}
+
+.big-checkbox:checked + label:after {
+	font-size: 28px;
+	left: 6px;
+}

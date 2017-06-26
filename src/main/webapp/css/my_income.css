@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+/*重置*/
+
+
+html,body{
+    background-color: #f0f0f0;
+	margin:0;
+	position:relative;
+	width: 100%;
+    
+	
+}
+body{}
+input{
+	border-style:none;
+	outline:none;
+	
+}
+*{
+	margin:0;
+	padding:0;
+	font-size:14px;
+	font-family: Arial, '微软雅黑',sans-serif;
+	font-weight:normal;
+}
+a{
+	text-decoration:none;
+	color:#333;
+}
+img{
+	display:block;
+}
+li{list-style:none;} 
+
+
+
+
+.statistics_date{line-height: 44px;border-bottom: 1px solid #dadada; border-top: 1px solid #DADADA; font-size: 16px; background: url(../img/day_icon@2x.png)  10px center no-repeat;background-size:16px ; padding-left: 36px; background-color: #84c101; margin: 10px 0 0px 0; }
+.statistics_date span{ color: #fff;font-size: 16px}
+.statistics_date img{
+	height: 20px;
+	float:right;
+	margin: 10px;
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+}
+.cnt_box1,.cnt_box2{border-bottom: 1px solid #dadada; border-top: 1px solid #DADADA;background-color: #Fff; margin-bottom: 10px;}
+.cnt{ width: 94%; margin: 0 auto; overflow: hidden;}
+.cnt p{ float: left; line-height: 40px; color: #666;}
+.cnt a{ float: right; color:#84c101 ;line-height: 40px;}
+.border_bottom{border-bottom: 1px solid #e5e5e5;}
+
+.mui-table-view {
+	border-left: 1px solid #84C101;
+	border-right: 1px solid #84C101;
+	border-bottom: 1px solid #84C101;
+}
+.mui-table-view-cell{
+	padding: 6px 15px;
+}
+
+.buyList{
+
+}
+
+
+
+
+

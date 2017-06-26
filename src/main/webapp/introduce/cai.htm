@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<!-- saved from url=(0147)http://mp.weixin.qq.com/s?__biz=MzA4Mjk3Njg4Ng==&mid=408247359&idx=1&sn=03d83bd9923b94af27958062ca77bfbb&scene=23&srcid=0307Sf7j6XdFVdyN3XlThFpX#rd -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+
+
+        <script type="text/javascript">
+            window.logs = {
+                pagetime: {}
+            };
+            window.logs.pagetime['html_begin'] = (+new Date());
+        </script>
+        
+
+<script type="text/javascript"> 
+
+    var page_begintime = (+new Date());
+
+    var biz = "MzA4Mjk3Njg4Ng=="||"";
+    var sn = "03d83bd9923b94af27958062ca77bfbb" || ""|| "";
+    var mid = "408247359" || ""|| "";
+    var idx = "1" || "" || "";
+
+    
+    var is_rumor = ""*1;
+    var norumor = ""*1;
+    if (!!is_rumor&&!norumor){
+      if (!document.referrer || document.referrer.indexOf("mp.weixin.qq.com/mp/rumor") == -1){
+        location.href = "http://mp.weixin.qq.com/mp/rumor?action=info&__biz=" + biz + "&mid=" + mid + "&idx=" + idx + "&sn=" + sn + "#wechat_redirect";
+      }
+    }
+
+    
+    
+</script>
+<script type="text/javascript">
+var MutationObserver = window.WebKitMutationObserver||window.MutationObserver||window.MozMutationObserver;
+var isDangerSrc = function(src) {
+    if(src) {
+        var host = src.match(/http(?:s)?:\/\/([^\/]+?)(\/|$)/);
+        if(host && !/qq\.com$/.test(host[1]) && !/weishi\.com$/.test(host[1])) {
+            return true;
+        }
+    }
+    return false;
+}
+var ishttp = location.href.indexOf("http://")==0;
+if (ishttp && typeof MutationObserver === 'function' && location.host == 'mp.weixin.qq.com') {
+    window.__observer_data = {count:0, exec_time: 0, list:[]};
+    window.__observer = new MutationObserver(function(mutations) {
+        
+        window.__observer_data.count++;
+        var begin = new Date(), deleteNodes = [];
+        mutations.forEach(function(mutation) {
+            var nodes = mutation.addedNodes;
+            for (var i = 0; i < nodes.length; i++) {
+                var node = nodes[i];
+
+                if (node.tagName === 'SCRIPT') {
+                    var scriptSrc = node.src;
+                    if(isDangerSrc(scriptSrc)) {
+                        window.__observer_data.list.push(scriptSrc);
+                        deleteNodes.push(node);
+                    }
+                
+                }
+            }
+        });
+        for(var i=0; i<deleteNodes.length; i++) {
+            var node = deleteNodes[i];
+            node.parentNode.removeChild(node);
+        }
+        window.__observer_data.exec_time += (new Date() - begin);
+    });
+    window.__observer.observe(document, {subtree: true, childList: true});
+}
+(function() {
+    if (Math.random()<0.01 && ishttp && HTMLScriptElement.prototype.__lookupSetter__ && typeof Object.defineProperty !== "undefined") {
+        window.__danger_src = {xmlhttprequest:[], script_src: [], script_setAttribute: []};
+        var t = "$"+Math.random();
+        
+        
+        HTMLScriptElement.prototype.__old_method_script_src = HTMLScriptElement.prototype.__lookupSetter__ ('src');
+        HTMLScriptElement.prototype.__defineSetter__ ('src', function(url) {
+            if (url && isDangerSrc(url)) {
+                
+                window.__danger_src.script_src.push(url);
+            }
+            this.__old_method_script_src(url);
+        });
+        var element_setAttribute_method = "element_setAttribute"+t;
+        Object.defineProperty(Element.prototype, element_setAttribute_method, {
+            value: Element.prototype.setAttribute,
+            enumerable: false
+        });
+        Element.prototype.setAttribute = function(name, url) {
+            if (this.tagName == 'SCRIPT' && name == 'src' && isDangerSrc(url)) {
+                
+                window.__danger_src.script_setAttribute.push(url);
+            }
+            this[element_setAttribute_method](name, url);
+        };
+    }
+})();
+</script>
+
+        <link rel="dns-prefetch" href="http://res.wx.qq.com/">
+<link rel="dns-prefetch" href="http://mmbiz.qpic.cn/">
+<link rel="shortcut icon" type="image/x-icon" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico">
+<script type="text/javascript">
+    String.prototype.html = function(encode) {
+        var replace =["&#39;", "'", "&quot;", '"', "&nbsp;", " ", "&gt;", ">", "&lt;", "<", "&amp;", "&", "&yen;", "¥"];
+        if (encode) {
+            replace.reverse();
+        }
+        for (var i=0,str=this;i< replace.length;i+= 2) {
+             str=str.replace(new RegExp(replace[i],'g'),replace[i+1]);
+        }
+        return str;
+    };
+
+    window.isInWeixinApp = function() {
+        return /MicroMessenger/.test(navigator.userAgent);
+    };
+
+    window.getQueryFromURL = function(url) {
+        url = url || 'http://qq.com/s?a=b#rd'; 
+        var query = url.split('?')[1].split('#')[0].split('&'),
+            params = {};
+        for (var i=0; i<query.length; i++) {
+            var arg = query[i].split('=');
+            params[arg[0]] = arg[1];
+        }
+        if (params['pass_ticket']) {
+        	params['pass_ticket'] = encodeURIComponent(params['pass_ticket'].html(false).html(false).replace(/\s/g,"+"));
+        }
+        return params;
+    };
+
+    (function() {
+	    var params = getQueryFromURL(location.href);
+        window.uin = params['uin'] || '';
+        window.key = params['key'] || '';
+        window.wxtoken = params['wxtoken'] || '';
+        window.pass_ticket = params['pass_ticket'] || '';
+    })();
+
+</script>
+
+        <title>蔡毅华老师简介</title>
+        
+<link rel="stylesheet" type="text/css" href="./cai_files/page_mp_article_improve2d1390.css">
+<style>
+     
+    </style>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_pc2c9cd6.css">
+<![endif]-->
+<script type="text/javascript">
+    document.domain = "qq.com";
+</script>
+
+    <link rel="stylesheet" type="text/css" href="./cai_files/not_in_mm2c9cd6.css"></head>
+    <body id="activity-detail" class="zh_CN mm_appmsg not_in_mm" ontouchstart="">
+        
+    <script type="text/javascript">
+        var write_sceen_time = (+new Date());
+    </script>
+    
+    <div id="js_cmt_mine" class="discuss_container editing access" style="display:none;">
+        <div class="discuss_container_inner">
+            <h2 class="rich_media_title">他收集有趣的东西，慢慢地自己也成了有趣的故事</h2>
+            <span id="log"></span>
+            <div class="frm_textarea_box_wrp">
+                <span class="frm_textarea_box">
+                    <textarea id="js_cmt_input" class="frm_textarea" placeholder="留言将由公众号筛选后显示，对所有人可见。"></textarea>
+                    <div class="emotion_tool">
+                        <span class="emotion_switch" style="display:none;"></span>
+                        <span id="js_emotion_switch" class="pic_emotion_switch_wrp">
+                            <img class="pic_default" src="./cai_files/icon_emotion_switch.2x278965.png" alt="">
+                            <img class="pic_active" src="./cai_files/icon_emotion_switch_active.2x278965.png" alt="">
+                        </span>
+                        <div class="emotion_panel" id="js_emotion_panel">
+                            <span class="emotion_panel_arrow_wrp" id="js_emotion_panel_arrow_wrp">
+                                <i class="emotion_panel_arrow arrow_out"></i>
+                                <i class="emotion_panel_arrow arrow_in"></i>
+                            </span>
+                            <div class="emotion_list_wrp" id="js_slide_wrapper">
+                                
+                                
+                            </div>
+                            <ul class="emotion_navs" id="js_navbar">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="discuss_btn_wrp"><a id="js_cmt_submit" class="btn btn_primary btn_discuss btn_disabled" href="javascript:;">提交</a></div>
+            <div class="discuss_list_wrp" style="display:none">
+                <div class="rich_tips with_line title_tips discuss_title_line">
+                    <span class="tips">我的留言</span>
+                </div>
+                <ul class="discuss_list" id="js_cmt_mylist"></ul>
+            </div>
+            <div class="rich_tips tips_global loading_tips" id="js_mycmt_loading">
+                <img src="./cai_files/icon_loading_white2805ea.gif" class="rich_icon icon_loading_white" alt="">
+                <span class="tips">加载中</span>
+            </div>
+            <div class="wx_poptips" id="js_cmt_toast" style="display:none;">
+                <img alt="" class="icon_toast" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyMTUxMzkxZS1jYWVhLTRmZTMtYTY2NS0xNTRkNDJiOGQyMWIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTA3QzM2RTg3N0UwMTFFNEIzQURGMTQzNzQzMDAxQTUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTA3QzM2RTc3N0UwMTFFNEIzQURGMTQzNzQzMDAxQTUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NWMyOGVjZTMtNzllZS00ODlhLWIxZTYtYzNmM2RjNzg2YjI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjIxNTEzOTFlLWNhZWEtNGZlMy1hNjY1LTE1NGQ0MmI4ZDIxYiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pmvxj1gAAAVrSURBVHja7J15rF1TFMbXk74q1ZKHGlMkJVIhIgg1FH+YEpEQJCKmGBpThRoSs5jVVNrSQUvEEENIhGiiNf9BiERICCFIRbUiDa2qvudbOetF3Tzv7XWGffa55/uS7593977n3vO7e5+199p7v56BgQGh0tcmvAUERREUQVEERREUQVEERREUQVEERREUQVEERREUQVEERREUQVEERVAUQVEERVAUQbVYk+HdvZVG8b5F0xj4RvhouB+eCy8KrdzDJc1RtAX8ILxvx98V1GyCSkN98Cx4z/95/Wn4fj6j6tUEeN4wkFSnw1MJqj5NhBfAuwaUHREUg4lqNMmePVsHll/HFhVfe1t3FwpJI8DXCCquDrCWNN4B6Tb4M3Z98aTPmTvh0YHl18PXw29yZiKejoPvcUD6E74yFBJbVDk6Bb7K8aP/Hb4c/tRzEYIqprPhSxzlf4Uvhb/0Xoig8qnHAJ3lqPMzfDH8XZ4LEpRf2sVdA5/sqPO9Qfop70UJyn+/boaPddT5yrq7VUUvTIVJI7q74MMddXR8NB1eXcYvhBpZm0s2w72/o86HFoKvLau/pYaXzjLMdUJ6y0LwtWV9CIIaXtvA8+G9HHV03u5q+K+yH47U0NoRngPv7KjzHDwTLj0bS1BDazfJJlcnOOostC6ysnCT+q80G/sIvFVgeW09D8FPVT0uoP7VfvAD8NjA8pqmuAN+OcYAjso0RbIZ8DGB5TVNcRO8JMaHY9SXSdfa3eeANJimWBLrA7JFiZwIXye+NMUV8CcxP2SRFjXefok7NRjSGZJlWUPvw2/wtNiQirSoXWyMsR28wR7AzzYM0oXw+Y7yK+CLJGeaoqjyrJSdZJD6Ov4+z5y6NJc0Az7NUecHydIUy+v60KNyQHoM3nKI1y7YCFiq0i7uBvgER52vDdKqWn9djhY1Dn4G3n6Ecqm2rF74dvgoR53S0hQxW9RJAZAGW5bSn58QJA27dQ7uIEedjywEX5NKVxCqsY6y+qA+LxFI4+yZ6oH0trWkNan80jygtIUsc5SflgAsDXgehfdx1KkkTRE76tN+Xue2jnTU0Ru1oIbvpt30bBtKhOp5yaaRkts0lic8V1i6dPcIRx2d/l8Y8XtNNEg7OOo8bl1kmmOKnDsO88CaYzejau0hWZqiL7C83oCH4SeTHvwV2BqqsHRVztSEYOmWF80NeXZT6Hd4KflResE9vCnBOlCyGfDNAstHTVPUDWoQ1t3iW+9WNizvlhfd4aerXd+ThqiMfNR6+9LvOOro5OY5JX2H4+F7HZD+kGzlamMgldWiirQsjcwWFbjmqZJteekJLK9pisvgL6RhKvuciZiwzrWWGapfrPy30kBVcSBIrw0aD3PU0XB6cehntq7rTMf7/2iQlktDVdXJLXlg6VjmiYBn6rWSTRCH6hvJ0hQrpcGq8oidsmHpTP8t8DGO9/vcWt9qabiqPgup1yKyQwvC2tSefZ73SSpNkUJ4PlLorlHZ+446nc8f3fIyywlJhwrTuwVSjBa1ccvSxN0hjjoK5xVrYZMd9V6XbFfgBukixTwGLg8sDam3dZR/wZ6L/dJlin1en8LS+bgpFbz3Ygvzu1J1HKxYNqxGpCmaCEo12rrBorD6LRp8UbpcdR5VWhTW35KlKd6QFqjuM2XzwlpnMxTvSkuUwuG/Xlg6NtPjbT6WFimF/VG6LEvXgn8QGDjMbBukVECFwhpoS+CQatfX2Q1q6H7wENHdrfCr0lKleEB9JyxNneus+VJpsVL9TwI6W65LovWIGl3KtVJaLv7LBwYTFEERFEVQFEERFEVQFEERFEVQFEERFEVQFEERFEVQFEERFFWq/hFgADUMN4RzT6/OAAAAAElFTkSuQmCC">
+                <p class="toast_content">已留言</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="js_article" class="rich_media">
+        
+        <div id="js_top_ad_area" class="top_banner">
+ 
+        </div>
+                
+
+        <div class="rich_media_inner">
+            <div id="page-content">
+                <div id="img-content" class="rich_media_area_primary">
+                    <h2 class="rich_media_title" id="activity-name">
+                        他收集有趣的东西，慢慢地自己也成了有趣的故事 
+                    </h2>
+                    <div class="rich_media_meta_list">
+                                                <span id="copyright_logo" class="rich_media_meta meta_original_tag">原创</span>
+                        						                        <em id="post-date" class="rich_media_meta rich_media_meta_text">2016-06-04</em>
+                                                <em class="rich_media_meta rich_media_meta_text">多泰</em>
+                                                <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname" href="javascript:void(0);" id="post-user">广州多泰网络科技技术有限公司</a>
+                        <span class="rich_media_meta rich_media_meta_text rich_media_meta_nickname">广州多泰网络科技技术有限公司</span>
+
+                        <div id="js_profile_qrcode" class="profile_container" style="display: none;">
+                            <div class="profile_inner">
+                                <strong class="profile_nickname">广州多泰网络科技技术有限公司</strong>
+                                <img class="profile_avatar" id="js_profile_qrcode_img" src="" alt="">
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">微信号</label>
+                                <span class="profile_meta_value">毅华书艺</span>
+                                </p>
+
+                                <p class="profile_meta">
+                                <label class="profile_meta_label">功能介绍</label>
+                                <span class="profile_meta_value">广州多泰网络科技技术有限公司</span>
+                                </p>
+                                
+                            </div>
+                            <span class="profile_arrow_wrp" id="js_profile_arrow_wrp">
+                                <i class="profile_arrow arrow_out"></i>
+                                <i class="profile_arrow arrow_in"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                                                            
+                                                            
+                    
+                    <div class="rich_media_content " id="js_content">
+                        
+
+<p style="white-space: normal;">穿越时空，多么遥远的梦想！但当我走进书法家蔡毅华老师的家，霎那，就真真实实地过足了一轮“穿越”瘾。</p>
+<p style="white-space: normal;">
+<br></p>
+<p style="text-align:center">
+<img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/VY0SoMRLVB48SfKU1y47boYc6o7BaRj5tRcP60gpbwLqrUKicIaDHNENSicvdgExxzib854gIVpoRvn2l6unIU20g/0?wx_fmt=jpeg" data-ratio="0.7877697841726619" data-w="" src="./cai_files/640(1)" style="width: auto !important; visibility: visible !important; height: auto !important;"></p>
+<p style="text-align: center; white-space: normal;">
+<span style="color: rgb(127, 127, 127); font-size: 12px;">▲剪纸窗花，绿竹幽幽，清高雅洁。</span>
+</p>
+<p style="white-space: normal;">
+<br></p>
+<p style="text-align:center">
+<img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/VY0SoMRLVB48SfKU1y47boYc6o7BaRj5osia793GJZhCw7grOazPzyKHH8gJBhuVX6wgY0wD5NFagJb6W5rW0fg/0?wx_fmt=jpeg" data-ratio="1.3327338129496402" data-w="" src="./cai_files/640(2)" style="width: auto !important; visibility: visible !important; height: auto !important;"></p>
+<p style="text-align: center; white-space: normal;">
+<span style="color: rgb(127, 127, 127); font-size: 12px;">▲宽大的罗汉床上和床底堆满了书。</span>
+</p>
+<p style="white-space: normal;">
+<span style="color: rgb(127, 127, 127); font-size: 12px;">
+<br></span>
+</p>
+<p style="text-align:center">
+<span style="color: rgb(127, 127, 127); font-size: 12px;">
+<img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/VY0SoMRLVB48SfKU1y47boYc6o7BaRj5BE9gELO4pkFVu63eiaHVic2FVZY0DaicpmuCpeiaVUVMeuLl9MklA4Yy7w/0?wx_fmt=jpeg" data-ratio="0.6654676258992805" data-w="" src="./cai_files/640(3)" style="width: 700px !important; visibility: visible !important; height: 465.82733812949635px !important;">
+<br></span>
+</p>
+<p style="white-space: normal; text-align: center;">
+<span style="color: rgb(127, 127, 127); font-size: 12px;">▲书桌一角。一切都很古旧，很杂乱，但是，却乱得让人很舒心。</span>
+</p>
+<p style="white-space: normal;">&nbsp;</p>
+<p></p>
+<section class="" style="   box-sizing: border-box; border: 0px none; " data-id="63576">
+<section style="width: 100%; margin: 10px; text-align: center; box-sizing: border-box;" data-width="100%">
+<section style="font-size: 1.3rem; letter-spacing: 0.14em; margin-left: -0.14em; border-top-width: 3px; border-top-style: solid; border-top-color: rgb(33, 33, 34); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(198, 198, 199); padding-top: 10px; padding-bottom: 15px; margin-top: 10px; margin-bottom: -10px; box-sizing: border-box;">
+<span style="line-height: 25.6000003814697px; font-size: 16px; color: rgb(12, 12, 11);">旧式文人的气息，氤氲缭绕</span>
+</section>
+<section style="display: inline-block; margin-left: -5px; border-left-width: 5px; border-left-style: solid; border-left-color: transparent; border-right-width: 5px; border-right-style: solid; border-right-color: transparent; border-top-width: 10px; border-top-style: solid; border-top-color: rgb(26, 26, 25); box-sizing: border-box;"></section>
+</section>
+<section style="width: 0px; height: 0px; clear: both; box-sizing: border-box;"></section>
+</section>
+<p></p>
+<p style="white-space: normal;">
+<br></p>
+<p style="white-space: normal;">
+<span style="line-height: inherit;">蔡毅华老师是个地道的老广氮人，居住在广氮社区的一处老房子里。</span>
+<br></p>
+<p style="white-space: normal;">
+<br></p>
+<p style="white-space: normal;">客厅不大，满屋都是旧物，左边靠墙的是古琴和宽大的罗汉床。罗汉床上、床底堆满了书，床边墙上还有木雕窗花，窗花上刻着很多传统民俗、故事，比如金榜题名、喜得贵子、洞房花烛、五代同堂等。中间是一张古旧桌子，桌上五花八门的古色杯子，犹如沉淀着一堆故事。人坐在桌子边，犹如坐在历史的岁月中。杯子边的小炉上，用铜壶汩汩烧着水，香早已点燃，香笼散出轻烟，一屋子香气氤氲缭绕。蔡毅华说，焚香能够净气。焚香抚琴，焚香静坐，空气清新，人也身心健康。</p>
+<p style="white-space: normal;">
+<br></p>
+<p style="text-align:center">
+<img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/VY0SoMRLVB48SfKU1y47boYc6o7BaRj5I9sqzbicB4RpOpQicwLSwyWJBXoSPyLk2Iy6Qbyt2oFIcyjH0tOQNjLg/0?wx_fmt=jpeg" data-ratio="1.7777777777777777" data-w="450" src="./cai_files/640(4)" style="width: 450px !important; visibility: visible !important; height: 800px !important;"></p>
+<p style="white-space: normal; text-align: center;">
+<span style="color: rgb(127, 127, 127); font-size: 12px;">▲焚香，喝茶，看书，看字画，很古典的旧式文人的气息。</span>
+</p>
+<p style="white-space: normal;">
+<br></p>
+<p style="white-space: normal;">门边是一张古旧的圈椅。圈椅下面是按古法烧制的“金砖”，圈椅旁是一个瘦削的高到屋顶的书柜。蔡毅华说，这是他自己设计，叫木匠做的。靠窗的是小姐椅，窗边还贴有剪纸窗花，窗外是一排竹子，清高雅洁，立马就让我想起大文豪苏东坡的诗句——宁可食无肉，不可居无竹。蔡毅华说，这竹子很受欢迎，“学生来我家玩，找我要竹子；一些书法家朋友来我家闲聊，也找我要竹子，我每次都很热心地分给他们，看来，苏东坡的文气境界，大家都喜欢呀。”</p>
+<p style="white-space: normal;">
+<br></p>
+<p style="text-align:center">
+<img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/VY0SoMRLVB48SfKU1y47boYc6o7BaRj5zoicTjMMYicpXukVhXjib793KTYcJzeeqMibpc9yRJov7GZR55Tban8YmQ/0?wx_fmt=jpeg" data-ratio="1.6528925619834711" data-w="484" src="./cai_files/640(5)" style="width: 484px !important; visibility: visible !important; height: 800px !important;"></p>
+<p style="text-align: center; white-space: normal;">
+<span style="color: rgb(127, 127, 127); font-size: 12px;">▲圈椅下面是按古法烧制的“金砖”。</span>
+</p>
+<p style="white-space: normal;">
+<span style="color: rgb(127, 127, 127); font-size: 12px;">
+<br></span>
+</p>
+<p style="white-space: normal;">书架挤满了窄窄的过道，小心翼翼地穿过，进到书房“半山堂”，铺天盖地的书、书法作品、大毛笔、篆章等等，直扑眼帘。一种很直观的感觉，从客厅到书房，颇有旧式传统文人的风范，一切都很古旧，很杂乱，但是，却乱得让人很舒心。</p>
+<p style="white-space: normal;">
+<br></p>
+<p style="text-align:center">
+<img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/VY0SoMRLVB48SfKU1y47boYc6o7BaRj5rOcZcWCh1XicbCy2CRzZt56VSPsEeVa1I6Zo78ziafDxTShXlwzWZNVQ/0?wx_fmt=jpeg" data-ratio="1.7777777777777777" data-w="450" src="./cai_files/640(6)" style="width: 450px !important; visibility: visible !important; height: 800px !important;"></p>
+<p style="text-align: center; white-space: normal;">
+<span style="color: rgb(127, 127, 127); font-size: 12px;">▲高到屋顶的瘦削书柜，是蔡毅华自己设计的。</span>
+</p>
+<p style="white-space: normal;">
+<br></p>
+<p style="white-space: normal;">蔡毅华说，其实，他家里收藏的东西，有旧的，也有新的，但不管是新还是旧，却都能和谐地放在一起。你看看，小姐椅、圈椅、罗汉床、木雕窗花、五花八门的古老杯子、满地的书籍、满地的字画……“乱”中氤氲出了一种很古典的旧式文人的气息。人置身其中，那种感觉，完全可以让人想起现在一种流行的语汇——“穿越”。仿佛就是“穿越”回了南北朝、三国，抑或是风流的唐宋与民国年代。</p>
+<p style="white-space: normal;">&nbsp;</p>
+<p style="text-align:center">
+<img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/VY0SoMRLVB48SfKU1y47boYc6o7BaRj5uNv07xFicFYw9FnvHfHRRxYsic8p0clKBPsLPD2VPicwicUUL9RKB5ibsXA/0?wx_fmt=jpeg" data-ratio="0.8848920863309353" data-w="" src="./cai_files/640(7)" style="width: 700px !important; visibility: visible !important; height: 619.4244604316547px !important;"></p>
+<p style="text-align:center">
+<span style="color: rgb(127, 127, 127); font-size: 13.3333339691162px; line-height: 21.3333339691162px; text-align: center;">▲家中摆满收藏品。</span>
+</p>
+<p style="text-align:center">
+<span style="color: rgb(127, 127, 127); font-size: 13.3333339691162px; line-height: 21.3333339691162px; text-align: center;">
+<br></span>
+</p>
+<p></p>
+<section class="" style="   box-sizing: border-box; border: 0px none; " data-id="63576">
+<section style="width: 100%; margin: 10px; text-align: center; box-sizing: border-box;" data-width="100%">
+<section style="font-size: 1.3rem; letter-spacing: 0.14em; margin-left: -0.14em; border-top-width: 3px; border-top-style: solid; border-top-color: rgb(33, 33, 34); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(198, 198, 199); padding-top: 10px; padding-bottom: 15px; margin-top: 10px; margin-bottom: -10px; box-sizing: border-box;">
+<span style="line-height: 25.6000003814697px; font-size: 16px; color: rgb(12, 12, 11);">收藏古物，滋养自己也滋养别人</span>
+</section>
+<section style="display: inline-block; margin-left: -5px; border-left-width: 5px; border-left-style: solid; border-left-color: transparent; border-right-width: 5px; border-right-style: solid; border-right-color: transparent; border-top-width: 10px; border-top-style: solid; border-top-color: rgb(26, 26, 25); box-sizing: border-box;"></section>
+</section>
+<section style="width: 0px; height: 0px; clear: both; box-sizing: border-box;"></section>
+</section>
+<p></p>
+<p style="white-space: normal;">
+<span style="line-height: inherit;">&nbsp; &nbsp;&nbsp;</span>
+<br></p>
+<p style="white-space: normal;">蔡毅华说，他喜欢收集古物，为的是营造一个古意的环境，因为文学与书法都需要环境来滋润的。人只有浸润在古意环境中，才能更深刻地热爱传统文化，结识更多喜欢传统文化的朋友。对他而言，收集古物，是一种雅致的阅读，滋养自己，也滋养别人。</p>
+<p style="white-space: normal;">
+<br></p>
+<p style="text-align:center">
+<img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/VY0SoMRLVB48SfKU1y47boYc6o7BaRj5iboWmTl9YEY0tKfauxeu5iajsUIAc5zRL6AWoDkA6SkmBsR6ic5e4p5Kg/0?wx_fmt=jpeg" data-ratio="0.6654676258992805" data-w="" src="./cai_files/640(8)" style="width: 700px !important; visibility: visible !important; height: 465.82733812949635px !important;"></p>
+<p style="text-align: center; white-space: normal;">
+<span style="color: rgb(127, 127, 127); font-size: 12px;">▲五花八门的古色杯子，沉淀着一堆故事。</span>
+</p>
+<p style="white-space: normal;">
+<br></p>
+<p style="white-space: normal;">蔡毅华认为，去各地淘古物，也是一种有趣的读书方法。“我现在还每隔两个月去一趟杭州，拜访名师，学习书法，提升境界。每次都要多停留一两天，去文玩市场，跟那些老板们聊聊天。在那边认识了张笑荣先生，是做古砖的。家里那块金砖，就是从他手里拍买来的。”</p>
+<p style="white-space: normal;">
+<br></p>
+<p style="white-space: normal;">今年春节期间，蔡毅华在棠德小区春节临时旧书摊中看到一本封面为《石门汉魏十三品》的硬书壳，里面放着两张货不对版的拓片，打开一看竟然是曹操（魏王）唯一存世作品“滚雪”原石的拓片！难以抑制心中的喜悦与激动，立马淘回了家。蔡毅华说，以前读曹操的诗作，相隔很遥远，如今“滚雪”原石拓片拉近了距离，感觉曹操就在拓片的后面，吟诵着气势磅礴的“东临碣石，以观沧海……”</p>
+<p style="white-space: normal;">
+<br></p>
+<p style="text-align:center">
+<img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/VY0SoMRLVB48SfKU1y47boYc6o7BaRj5EaCBtdLpFvpcj8unFiaOd5lcwH9jvtz2BUtUc5eaMOCCXXQODup9Feg/0?wx_fmt=jpeg" data-ratio="0.5611510791366906" data-w="" src="./cai_files/640(9)" style="width: 700px !important; visibility: visible !important; height: 392.80575539568343px !important;"></p>
+<p style="text-align: center; white-space: normal;">
+<span style="color: rgb(127, 127, 127); font-size: 12px;">▲今年春节淘到的曹操唯一存世作品“滚雪”原石的拓片。</span>
+</p>
+<p style="white-space: normal;">
+<br></p>
+<p style="white-space: normal;">“当然，读书和收藏也是我生计的一部分吧。”蔡毅华说，为了教好学生，源源不断地抛出新的点子，他不断收集一些有趣的故事，因为在课堂上，孩子们特别喜欢听故事，于是，<span style="color: rgb(192, 0, 0);">“我收集有趣的东西，慢慢地自己也成了故事里有趣的一部分。”</span>
+</p>
+<p style="white-space: normal;">&nbsp;</p>
+<p></p>
+<section class="" style="   box-sizing: border-box; border: 0px none; " data-id="63576">
+<section style="width: 100%; margin: 10px; text-align: center; box-sizing: border-box;" data-width="100%">
+<section style="font-size: 1.3rem; letter-spacing: 0.14em; margin-left: -0.14em; border-top-width: 3px; border-top-style: solid; border-top-color: rgb(33, 33, 34); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(198, 198, 199); padding-top: 10px; padding-bottom: 15px; margin-top: 10px; margin-bottom: -10px; box-sizing: border-box;">
+<span style="line-height: 25.6000003814697px; font-size: 16px; color: rgb(12, 12, 11);">喜欢把书法书当小说来看</span>
+</section>
+<section style="display: inline-block; margin-left: -5px; border-left-width: 5px; border-left-style: solid; border-left-color: transparent; border-right-width: 5px; border-right-style: solid; border-right-color: transparent; border-top-width: 10px; border-top-style: solid; border-top-color: rgb(26, 26, 25); box-sizing: border-box;"></section>
+</section>
+<section style="width: 0px; height: 0px; clear: both; box-sizing: border-box;"></section>
+</section>
+<p></p>
+<p style="white-space: normal;">
+<br></p>
+<p style="white-space: normal;">蔡毅华小时候的梦想，是成为一个作家，成为一个靠笔杆子吃饭的人。但随着时间推移，他转向了书法。有意思的是，他小时候看书法书籍，是当成小说来看的。书法书里有很多的奇闻轶事。比如，王羲之，袒腹东床，被选为“东床快婿”；唐代书法家欧阳询，骑马赶路，无意中看到晋代著名书法家索靖书写的古碑，竟然守在古碑前三天三夜方才离去等等，越看越喜欢书法，最后就陷入书法里不可自拔啦。</p>
+<p style="white-space: normal;">
+<br></p>
+<p style="white-space: normal;">2000年，广州氮肥厂关闭了，他有过一段惶惑的时间，不知道该怎么走自己后面的人生路。后来，他还是决定“以笔杆来工作和生活”。蔡毅华笑说，他现在一心研究书法，一心从事书法教学，这也是以笔杆子吃饭，只是不同的笔杆子而已。</p>
+<p style="white-space: normal;">
+<br></p>
+<p style="text-align:center">
+<img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/VY0SoMRLVB48SfKU1y47boYc6o7BaRj5SdgicHElkgAib62mqTEPXzz9QbmkbHQJu4u9GUGldKaicMEXFBgNP59kw/0?wx_fmt=jpeg" data-ratio="0.5611510791366906" data-w="" src="./cai_files/640(10)" style="width: 700px !important; visibility: visible !important; height: 392.80575539568343px !important;"></p>
+<p style="text-align: center; white-space: normal;">
+<span style="color: rgb(127, 127, 127); font-size: 12px;">▲蔡毅华的书法作品。</span>
+</p>
+<p style="white-space: normal;">&nbsp;</p>
+<p></p>
+<section class="" style="   box-sizing: border-box; border: 0px none; " data-id="63576">
+<section style="width: 100%; margin: 10px; text-align: center; box-sizing: border-box;" data-width="100%">
+<section style="font-size: 1.3rem; letter-spacing: 0.14em; margin-left: -0.14em; border-top-width: 3px; border-top-style: solid; border-top-color: rgb(33, 33, 34); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(198, 198, 199); padding-top: 10px; padding-bottom: 15px; margin-top: 10px; margin-bottom: -10px; box-sizing: border-box;">
+<span style="color: rgb(12, 12, 11); font-size: 16px;">“<span style="line-height: 25.6000003814697px;">最开心的是，孩子们最记得我是个’会讲故事的老师‘。”</span>
+</span>
+</section>
+<section style="display: inline-block; margin-left: -5px; border-left-width: 5px; border-left-style: solid; border-left-color: transparent; border-right-width: 5px; border-right-style: solid; border-right-color: transparent; border-top-width: 10px; border-top-style: solid; border-top-color: rgb(26, 26, 25); box-sizing: border-box;"></section>
+</section>
+<section style="width: 0px; height: 0px; clear: both; box-sizing: border-box;"></section>
+</section>
+<p></p>
+<p style="white-space: normal;">
+<br></p>
+<p style="white-space: normal;">
+<span style="line-height: inherit;">&nbsp; &nbsp;&nbsp;</span>
+<br></p>
+<p style="white-space: normal;">蔡毅华从事小学生书法教学取得了很多优异的成绩，远的不说，光是去年至今，2015年他教的学生参加全国中小学书法比赛，拿了31个全国一等奖；2016年1月17日，在由广州市教育局、广州市书法家协会主办的“星之光杯”广州市第九届青少年书法大赛现场总决赛中，他的学生再创佳绩，7人获一等奖、5人获二等奖、4人获三等奖、6人获优秀奖！</p>
+<p style="white-space: normal;">
+<br></p>
+<p style="white-space: normal;">很多学生都觉得学书法枯燥，累人，但为什么他教的学生能频频取得好成绩？对此，蔡毅华解释说，学习书法，本身就是很郁闷的一件事情。郁闷的东西，该怎么教学？那就是一定要跟有趣的东西糅合。因为<span style="color: rgb(192, 0, 0);">书法的高度，最后决定的不是你写的高度，而是你整个人的修养高度。</span>为什么孩子觉得学书法累，那是因为带孩子入门的这个老师，没有给孩子讲中国书法后面的故事与知识，书法教学没有温情没有温度，自然就难以让孩子坚持学习下去。</p>
+<p style="white-space: normal;">
+<br></p>
+<p style="text-align:center">
+<img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/VY0SoMRLVB48SfKU1y47boYc6o7BaRj5B8ktA0trialutlKp0Eeic4lSlkXDl2LPJQU9G9cxnvnCFJHaPdj9JL9Q/0?wx_fmt=jpeg" data-ratio="0.75" data-w="" src="./cai_files/640(11)" style="width: 700px !important; visibility: visible !important; height: 525px !important;"></p>
+<p style="text-align: center; white-space: normal;">
+<span style="color: rgb(127, 127, 127); font-size: 12px;">▲蔡毅华的学生取得了很多优异成绩。</span>
+</p>
+<p style="white-space: normal;">
+<br></p>
+<p style="white-space: normal;">蔡毅华则琢磨出了自己鲜活的教学方法，“我上书法课，每一节都有一个有趣的书法故事在里面，并经常生动地呈现出来给孩子看。”比如说，他去兰亭，有意识地买了王羲之曲水流觞的杯子回来。他带上酒杯，拿上水桶，在课堂上讲了曲水流觞的故事，把酒倒到杯子里，放到水桶里，漂给孩子看，孩子兴奋极了。</p>
+<p style="white-space: normal;">
+<br></p>
+<section class="" style="   box-sizing: border-box; border: 0px none; " data-id="4503">
+<section style="padding: 40px; color: rgb(115, 115, 115); box-sizing: border-box; background: rgb(248, 248, 248);">
+<p style="white-space: normal;">
+<img data-src="http://mmbiz.qpic.cn/mmbiz/yqVAqoZvDibF3x0SNh9B9biafDD4KB7yQuoknNUQ8ibfCKA7fickT4wnuQuBCrHiaVuETmrIJnChFBbJyhFsjFj51jg/0?wx_fmt=png" style="width: 19px !important; height: 18px !important; visibility: visible !important;" data-ratio="0.9473684210526315" data-w="19" _width="19px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJDQzA1MTVGNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJDQzA1MTYwNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkNDMDUxNUQ2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkNDMDUxNUU2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6p+a6fAAAAD0lEQVR42mJ89/Y1QIABAAWXAsgVS/hWAAAAAElFTkSuQmCC"></p>
+<section class="" data-style="background-color:rgb(248, 248, 248); color:rgb(115, 115, 115); font-size:14px; line-height:21px" style="box-sizing: border-box;">
+<p style="font-size: 14px; line-height: 21px; white-space: normal;">
+<span style="font-size: 15.5555562973022px; line-height: 28.4444465637207px;">我用有趣的故事，让孩子们亲切地感受到了活生生的中国传统文化。一节课，信息量大，又给孩子们很兴奋的感觉，很自然就能激起他们对中国传统书法的学习热情，如今有些孩子跟在我身边学书法都有上10年了。我最开心的就是，孩子们最记得我是个‘会讲故事的老师’。</span>
+</p>
+</section>
+<p style="text-align: right; white-space: normal;">
+<img data-src="http://mmbiz.qpic.cn/mmbiz/yqVAqoZvDibF3x0SNh9B9biafDD4KB7yQuickOp9iczpXqIvOMKjRGeF78tbmDNfO9bCc5OqBrL2QdRKBicy7rSG4Og/0?wx_fmt=png" style="width: 19px !important; height: 18px !important; visibility: visible !important;" data-ratio="0.9473684210526315" data-w="19" _width="19px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJDQzA1MTVGNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJDQzA1MTYwNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkNDMDUxNUQ2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkNDMDUxNUU2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6p+a6fAAAAD0lEQVR42mJ89/Y1QIABAAWXAsgVS/hWAAAAAElFTkSuQmCC"></p>
+</section>
+<section style="width: 0px; height: 0px; clear: both; box-sizing: border-box;"></section>
+</section>
+<p style="white-space: normal;">
+<br></p>
+<p style="white-space: normal;">著名历史学家陈寅恪先生给新生上课时开宗明义地讲：“前人讲过的，我不讲；近人讲过的，我不讲；外国人讲过的，我不讲；我自己过去讲过的，也不讲。现在只讲未曾有人讲过的。”蔡毅华说，他很欣赏这段话，并拍下来存在手机上，为的是时刻提醒自己，上课要时刻讲出新意。而他的新意，便是讲孩子们没听过的有趣故事。这需要不停地去阅读更多书籍，收集更多古物，以便立体地把故事有趣地呈现给孩子们看。如此，他的家越来越乱，也越来越古意悠悠。</p>
+<p style="white-space: normal;">
+<br></p>
+<p style="text-align:center">
+<img data-s="300,640" data-type="jpeg" data-src="http://mmbiz.qpic.cn/mmbiz/VY0SoMRLVB48SfKU1y47boYc6o7BaRj5MYHc00QOJV4IIjOTa2waJ3BtKmonEyn8eBkL53PzF1Ma3JTqT5AcPA/0?wx_fmt=jpeg" data-ratio="0.6654676258992805" data-w="" src="./cai_files/640(12)" style="width: 700px !important; visibility: visible !important; height: 465.82733812949635px !important;"></p>
+<p style="text-align:center">
+<span style="color: rgb(136, 136, 136); font-size: 12px;">
+<span style="color: rgb(136, 136, 136); line-height: 21.3333339691162px; text-align: center;">▲</span>蔡毅华说：我最开心的是，孩子们最记得我是个“会讲故事的老师”。</span>
+</p>
+<p style="text-align:center">
+<br></p>
+<p style="max-width: 100%; min-height: 1em; white-space: normal; color: rgb(62, 62, 62); font-size: 15.5555562973022px; line-height: 28.4444465637207px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);">&nbsp;</p>
+<p></p>
+
+                        
+                        <!-- <section class="" data-id="85820" style="max-width: 100%; box-sizing: border-box; color: rgb(62, 62, 62); font-size: 15.5555562973022px; white-space: normal; border: 0px currentcolor; line-height: 25.6px; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><section class="" style="margin: 5px auto; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); color: rgb(255, 255, 255); word-wrap: break-word !important;">
+                        <section style="max-width: 100%; box-sizing: border-box; color: inherit; clear: both; word-wrap: break-word !important;"><section style="margin-top: -1px; margin-right: 10px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 11px; color: inherit; float: right; word-wrap: break-word !important; height: 11px !important;"></section><section style="margin-top: -1px; margin-right: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 11px; color: inherit; float: right; word-wrap: break-word !important; height: 11px !important;"></section>
+                        <section style="margin-top: -1px; margin-left: 10px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 11px; color: inherit; float: left; word-wrap: break-word !important; height: 11px !important;"></section><section style="margin-top: -1px; margin-left: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 11px; color: inherit; float: left; word-wrap: break-word !important; height: 11px !important;"></section></section>
+                        <section style="padding-top: 10px; max-width: 100%; box-sizing: border-box; border-color: rgb(252, 180, 43); color: inherit; word-wrap: break-word !important;"><section style="margin-top: -1px; margin-right: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 12px; color: inherit; float: right; word-wrap: break-word !important; height: 11px !important;"></section><section style="margin-top: -1px; margin-right: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 11px; color: inherit; float: right; word-wrap: break-word !important; height: 11px !important;"></section><section style="margin-top: -1px; margin-left: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 12px; color: inherit; float: left; word-wrap: break-word !important; height: 11px !important;"></section><section style="margin-top: -1px; margin-left: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 11px; color: inherit; float: left; word-wrap: break-word !important; height: 11px !important;"></section></section><section style="padding-top: 10px; max-width: 100%; box-sizing: border-box; border-color: rgb(252, 180, 43); color: inherit; word-wrap: break-word !important;"><section style="margin-top: -1px; margin-right: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 12px; color: inherit; float: right; word-wrap: break-word !important; height: 11px !important;"></section><section style="margin-top: -1px; margin-left: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 12px; color: inherit; float: left; word-wrap: break-word !important; height: 11px !important;"></section><section class="" data-style="color: inherit; text-align: center; color: rgb(12, 12, 12);line-height: 1.75em;" style="padding: 20px; max-width: 100%; box-sizing: border-box; word-wrap: break-word !important;"><p style="max-width: 100%; min-height: 1em; border-color: rgb(252, 180, 43); text-align: center; color: inherit; line-height: 1.75em; box-sizing: border-box !important; word-wrap: break-word !important;"><span style="max-width: 100%; color: rgb(12, 12, 12); line-height: 25.6px; font-size: 14px; box-sizing: border-box !important; word-wrap: break-word !important;">e家君推出一个全新栏目：<span style="max-width: 100%; line-height: 25.6px; text-shadow: rgb(192, 0, 0) 2px 2px 10px; box-sizing: border-box !important; word-wrap: break-word !important;">《作家眼中的车陂》</span>，文化就像一种胶片中的光影，那一小片光影都有存在之美，让我们一起来发现那些被你忽略的车陂之美。</span></p></section></section><section style="max-width: 100%; box-sizing: border-box; border-color: rgb(252, 180, 43); color: inherit; word-wrap: break-word !important;"><section style="margin-top: -1px; margin-right: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 12px; color: inherit; float: right; word-wrap: break-word !important; height: 11px !important;"></section><section style="margin-top: -1px; margin-left: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 12px; color: inherit; float: left; word-wrap: break-word !important; height: 11px !important;"></section></section><section style="padding-top: 10px; max-width: 100%; box-sizing: border-box; border-color: rgb(252, 180, 43); color: inherit; word-wrap: break-word !important;"><section style="margin-top: -1px; margin-right: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 12px; color: inherit; float: right; word-wrap: break-word !important; height: 11px !important;"></section><section style="margin-top: -1px; margin-right: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 11px; color: inherit; float: right; word-wrap: break-word !important; height: 11px !important;"></section><section style="margin-top: -1px; margin-left: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 12px; color: inherit; float: left; word-wrap: break-word !important; height: 11px !important;"></section><section style="margin-top: -1px; margin-left: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 11px; color: inherit; float: left; word-wrap: break-word !important; height: 11px !important;"></section></section><section style="margin-bottom: -1px; padding-top: 10px; max-width: 100%; box-sizing: border-box; border-color: rgb(252, 180, 43); color: inherit; word-wrap: break-word !important;"><section style="margin-top: -1px; margin-right: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 12px; color: inherit; float: right; word-wrap: break-word !important; height: 11px !important;"></section><section style="margin-top: -1px; margin-right: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 11px; color: inherit; float: right; word-wrap: break-word !important; height: 11px !important;"></section><section style="margin-top: -1px; margin-right: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 11px; color: inherit; float: right; word-wrap: break-word !important; height: 11px !important;"></section><section style="margin-top: -1px; margin-left: 10px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 11px; color: inherit; float: left; word-wrap: break-word !important; height: 11px !important;"></section><section style="margin-top: -1px; margin-left: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 11px; color: inherit; float: left; word-wrap: break-word !important; height: 11px !important;"></section><section style="margin-top: -1px; margin-left: -1px; max-width: 100%; box-sizing: border-box; border: 1px solid rgb(252, 180, 43); width: 12px; color: inherit; word-wrap: break-word !important; height: 11px !important;"></section></section></section><section style="max-width: 100%; box-sizing: border-box; width: 0px; height: 0px; clear: both; word-wrap: break-word !important;"></section></section>
+                        <p></p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); font-size: 15.5555562973022px; line-height: 28.4444465637207px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);">&nbsp;<span style="font-size: 15.5555562973022px; line-height: 28.4444465637207px; white-space: normal;">&nbsp;</span></p><p style="max-width: 100%; min-height: 1em; white-space: normal; color: rgb(62, 62, 62); font-size: 15.5555562973022px; line-height: 25.6px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; font-size: 14px; box-sizing: border-box !important; word-wrap: break-word !important;"><span style="max-width: 100%; color: rgb(127, 127, 127); line-height: 25.6px; white-space: pre-wrap; text-shadow: rgb(192, 0, 0) 2px 2px 10px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(248, 248, 248);">作家简介：</span><span style="max-width: 100%; color: rgb(127, 127, 127); line-height: 25.6px; white-space: pre-wrap; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(248, 248, 248);">潘小娴,作家，现已出版《美人香里说宋词》、《村上春树的三张面孔》、《闲敲棋子落灯花》、《最美的游戏》、《钢琴美韵》、《钢琴的故事》、《建筑家陈伯齐》、《会飞的蒲公英》等作品。</span></span></p><p style="max-width: 100%; min-height: 1em; white-space: normal; color: rgb(62, 62, 62); font-size: 15.5555562973022px; line-height: 25.6px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; font-size: 14px; box-sizing: border-box !important; word-wrap: break-word !important;"><span style="max-width: 100%; color: rgb(127, 127, 127); line-height: 25.6px; white-space: pre-wrap; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(248, 248, 248);"><br></span></span></p><p><span style="max-width: 100%; font-size: 14px; box-sizing: border-box !important; word-wrap: break-word !important;"><span style="max-width: 100%; color: rgb(127, 127, 127); line-height: 25.6px; white-space: pre-wrap; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(248, 248, 248);"><br></span></span></p><p style="max-width: 100%; min-height: 1em; white-space: normal; color: rgb(62, 62, 62); font-size: 15.55px; line-height: 25.6px; text-align: center; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; color: rgb(136, 136, 136); line-height: 25.6px; font-size: 12px; box-sizing: border-box !important; word-wrap: break-word !important;">文图丨信息时报记者 潘小娴</span></p><p style="max-width: 100%; min-height: 1em; white-space: normal; color: rgb(62, 62, 62); font-size: 15.55px; line-height: 25.6px; text-align: center; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><span style="max-width: 100%; color: rgb(136, 136, 136); line-height: 25.6px; font-size: 12px; box-sizing: border-box !important; word-wrap: break-word !important;">信息时报编辑丨橙子鱼</span></p><p style="max-width: 100%; min-height: 1em; white-space: pre-wrap; color: rgb(62, 62, 62); font-size: 15.55px; text-align: center; line-height: 28.44px; box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><img width="auto" data-ratio="0.6906474820143885" data-w="" data-type="jpeg" data-s="300,640" data-src="http://mmbiz.qpic.cn/mmbiz/VY0SoMRLVB5pcWw0ibHYfUvCaWTPGOoD5jBCPia7gk1VcIWHPFemxRuDST332MvZdKltTiaLuh4IGib0nVM9Jgdv6w/640?wx_fmt=jpeg" style="color: inherit; line-height: 25.6px; font-family: inherit; font-size: 15.55px; font-weight: inherit; text-decoration: inherit; white-space: normal; box-sizing: border-box !important; word-wrap: break-word !important; width: 700px !important; visibility: visible !important; height: 483.45323741007195px !important;" _width="auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJDQzA1MTVGNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJDQzA1MTYwNkE2MjExRTRBRjEzODVCM0Q0NEVFMjFBIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QkNDMDUxNUQ2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QkNDMDUxNUU2QTYyMTFFNEFGMTM4NUIzRDQ0RUUyMUEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6p+a6fAAAAD0lEQVR42mJ89/Y1QIABAAWXAsgVS/hWAAAAAElFTkSuQmCC"></p><p><br></p>
+                         -->
+                        
+                        
+                        
+                    </div>
+                    <script type="text/javascript">
+                        var first_sceen__time = (+new Date());
+
+                        if ("" == 1 && document.getElementById('js_content'))
+                            document.getElementById('js_content').addEventListener("selectstart",function(e){ e.preventDefault(); });
+
+                                        (function(){
+                            if (navigator.userAgent.indexOf("WindowsWechat") != -1){
+                                var link = document.createElement('link');
+                                var head = document.getElementsByTagName('head')[0];
+                                link.rel = 'stylesheet';
+                                link.type = 'text/css';
+                                link.href = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+                                head.appendChild(link);
+                            }
+                        })();
+                    </script>
+                    <link rel="stylesheet" type="text/css" href="./cai_files/page_mp_article_improve_combo2e2655.css">
+                    
+                    
+                                        
+                                        
+                                        <div class="rich_media_tool" id="js_toobar3">
+                                                                    <div id="js_read_area3" class="media_tool_meta tips_global meta_primary" style="display:none;">阅读 <span id="readNum3"></span></div>
+
+                        <span style="display:none;" class="media_tool_meta meta_primary tips_global meta_praise" id="like3">
+                            <i class="icon_praise_gray"></i><span class="praise_num" id="likeNum3"></span>
+                        </span>
+
+                        <a id="js_report_article3" style="display:none;" class="media_tool_meta tips_global meta_extra" href="javascript:void(0);">投诉</a>
+
+                    </div>
+
+
+
+                                    </div>
+
+                <div class="rich_media_area_primary sougou" id="sg_tj" style="display:none">
+
+                </div>
+
+                <div class="rich_media_area_extra">
+
+                    
+                                        <div class="mpda_bottom_container" id="js_bottom_ad_area">
+                        
+                    </div>
+                                        
+                    <div id="js_iframetest" style="display:none;"></div>
+                                        
+                                        <div class="rich_media_extra" id="js_cmt_area" style="display:none">
+
+                        <div class="discuss_container" id="js_cmt_main" style="display:none">
+                            <div class="rich_tips with_line title_tips discuss_title_line">
+                                <span class="tips">精选留言</span>
+                            </div>
+                            <p class="tips_global tc title_bottom_tips" id="js_cmt_nofans1" style="display:none;">该文章作者已设置需关注才可以留言</p>
+                            <p class="discuss_icon_tips title_bottom_tips tr" id="js_cmt_addbtn1" style="display:none">
+                                
+                                                                <a href="http://mp.weixin.qq.com/s?__biz=MzA4Mjk3Njg4Ng==&mid=408247359&idx=1&sn=03d83bd9923b94af27958062ca77bfbb&scene=23&srcid=0307Sf7j6XdFVdyN3XlThFpX#comment">写留言<img class="icon_edit" src="./cai_files/icon_edit25ded2.png" alt=""></a>
+                                                            </p>
+                            <ul class="discuss_list" id="js_cmt_list"></ul>
+                        </div>
+
+
+                        <div class="tips_global rich_split_tips tc" id="js_cmt_nofans2" style="display:none;">
+                            该文章作者已设置需关注才可以留言
+                        </div>
+
+                        <p class="discuss_icon_tips rich_split_tips tr" id="js_cmt_addbtn2" style="display:none">
+                            
+                                                        <a href="http://mp.weixin.qq.com/s?__biz=MzA4Mjk3Njg4Ng==&mid=408247359&idx=1&sn=03d83bd9923b94af27958062ca77bfbb&scene=23&srcid=0307Sf7j6XdFVdyN3XlThFpX#comment">写留言<img class="icon_edit" src="./cai_files/icon_edit25ded2.png" alt=""></a>
+                                                    </p>
+
+                        <p class="rich_split_tips tc tips_global" id="js_cmt_tips" style="display:none;"></p>
+
+
+                        <div class="rich_tips tips_global loading_tips" id="js_cmt_loading">
+                            <img src="./cai_files/icon_loading_white2805ea.gif" class="rich_icon icon_loading_white" alt="">
+                            <span class="tips">加载中</span>
+                        </div>
+
+                        <div class="rich_tips with_line tips_global" id="js_cmt_statement" style="display:none">
+                            <span class="tips">以上留言由公众号筛选后显示</span>
+                        </div>
+
+                        <p class="rich_split_tips tc" id="js_cmt_qa" style="display:none;">
+                            <a href="http://kf.qq.com/touch/sappfaq/150211YfyMVj150313qmMbyi.html?scene_id=kf264">
+                                了解留言功能详情
+                            </a>
+                        </p>
+
+                    </div>
+                                    </div>
+               
+            </div>
+           <!--  <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display: block;">
+                <div class="qr_code_pc_inner">
+                    <div class="qr_code_pc">
+                        <img id="js_pc_qr_code_img" class="qr_code_pc_img" src="./cai_files/qrcode">
+                        <p>微信扫一扫<br>关注该公众号</p>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+
+        
+        <script>
+    var __DEBUGINFO = {
+        debug_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/debug/console2ca724.js",
+        safe_js : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/moonsafe2e21ab.js",
+        res_list: []
+    };
+</script>
+        <script>window.moon_map = {"appmsg/emotion/caret.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/caret278965.js","biz_wap/jsapi/cardticket.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/cardticket275627.js","appmsg/emotion/map.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/map278965.js","appmsg/emotion/textarea.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/textarea27cdc5.js","appmsg/emotion/nav.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/nav278965.js","appmsg/emotion/common.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/common278965.js","appmsg/emotion/slide.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/slide2a9cd9.js","pages/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/report2c9cd6.js","pages/music_player.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/music_player2b674b.js","pages/loadscript.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/loadscript2c9cd6.js","appmsg/emotion/dom.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/dom278965.js","biz_wap/utils/hashrouter.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/hashrouter2805ea.js","a/gotoappdetail.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/gotoappdetail2a2c13.js","a/ios.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/ios275627.js","a/android.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/android2c5484.js","a/profile.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/profile29b1f8.js","a/mpshop.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/mpshop2da3e2.js","a/card.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/a/card2d1390.js","biz_wap/utils/position.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/position29b1f8.js","appmsg/a_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_report2e2d45.js","biz_common/utils/respTypes.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/respTypes2c57d0.js","appmsg/cmt_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cmt_tpl.html2a2c13.js","sougou/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/a_tpl.html2c6e7c.js","appmsg/emotion/emotion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/emotion/emotion2a9cd9.js","biz_common/utils/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/report275627.js","biz_common/utils/huatuo.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/huatuo293afc.js","biz_common/utils/cookie.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/cookie275627.js","pages/voice_component.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/voice_component2c5484.js","new_video/ctl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/new_video/ctl2d441f.js","biz_common/utils/monitor.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/monitor2a30ee.js","biz_common/utils/spin.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/spin275627.js","biz_wap/jsapi/pay.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/pay275627.js","appmsg/reward_entry.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/reward_entry2e21d7.js","appmsg/comment.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/comment2d39f3.js","appmsg/like.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/like2b5583.js","appmsg/a.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a2da3e2.js","pages/version4video.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/pages/version4video2c7543.js","rt/appmsg/getappmsgext.rt.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/rt/appmsg/getappmsgext.rt2c21f6.js","biz_wap/utils/storage.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/storage2a74ac.js","biz_common/tmpl.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/tmpl2b3578.js","appmsg/img_copyright_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/img_copyright_tpl.html2a2c13.js","appmsg/a_tpl.html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/a_tpl.html2d1390.js","biz_common/ui/imgonepx.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/ui/imgonepx275627.js","biz_common/dom/attr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/attr275627.js","biz_wap/utils/ajax.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/ajax2c7a90.js","biz_common/utils/string/html.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/string/html29f4e9.js","sougou/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/sougou/index2c7543.js","biz_wap/safe/mutation_observer_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/safe/mutation_observer_report2d5cb8.js","appmsg/report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report2cf2a3.js","biz_common/dom/class.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/class275627.js","appmsg/report_and_source.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/report_and_source2c0ff9.js","appmsg/page_pos.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/page_pos2d38d6.js","appmsg/cdn_speed_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_speed_report2c57d0.js","appmsg/voice.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/voice2ab8bd.js","appmsg/qqmusic.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/qqmusic2ab8bd.js","appmsg/iframe.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/iframe2ddceb.js","appmsg/review_image.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/review_image2d0cfe.js","appmsg/outer_link.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/outer_link275627.js","biz_wap/jsapi/core.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/core2c30c1.js","biz_common/dom/event.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/dom/event275627.js","appmsg/copyright_report.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/copyright_report2c57d0.js","appmsg/cache.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cache2a74ac.js","appmsg/pay_for_reading.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/pay_for_reading2c5484.js","appmsg/async.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/async2e21d7.js","biz_wap/ui/lazyload_img.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/ui/lazyload_img2b18f6.js","biz_common/log/jserr.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/log/jserr2805ea.js","appmsg/share.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/share2daac1.js","biz_wap/utils/mmversion.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/mmversion275627.js","appmsg/cdn_img_lib.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/cdn_img_lib275627.js","biz_common/utils/url/parse.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_common/utils/url/parse2dd7fd.js","biz_wap/utils/device.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/utils/device2b3aae.js","biz_wap/jsapi/a8key.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/biz_wap/jsapi/a8key2a30ee.js","appmsg/index.js":"http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/appmsg/index2dd894.js"};</script><script type="text/javascript" src="./cai_files/moon2c7b0a.js"></script>
+    <script id="voice_tpl" type="text/html">        
+        <span id="voice_main_<#=voiceid#>_<#=posIndex#>" class="db audio_area <#if(!musicSupport){#> unsupport<#}#>">
+            <span class="tc tips_global unsupport_tips" <#if(show_not_support!==true){#>style="display:none;"<#}#>>
+            当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放            </span>
+            <span class="audio_wrp db">
+                <span id="voice_play_<#=voiceid#>_<#=posIndex#>" class="audio_play_area">
+                    <i class="icon_audio_default"></i>
+                    <i class="icon_audio_playing"></i>
+                    <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png" alt="" class="pic_audio_default">
+                </span>
+                <span class="audio_length tips_global"><#=duration_str#></span>
+                <span class="db audio_info_area">
+                    <strong class="db audio_title"><#=title#></strong>
+                    <span class="audio_source tips_global"><#if(window.nickname){#>来自<#=window.nickname#><#}#></span>
+                </span>
+                <span id="voice_progress_<#=voiceid#>_<#=posIndex#>" class="progress_bar" style="width:0px;"></span>
+            </span>
+        </span>
+    </script>
+
+    <script id="qqmusic_tpl" type="text/html">        
+        <span id="qqmusic_main_<#=comment_id#>_<#=posIndex#>" class="db qqmusic_area <#if(!musicSupport){#> unsupport<#}#>">
+            <span class="tc tips_global unsupport_tips" <#if(show_not_support!==true){#>style="display:none;"<#}#>>
+            当前浏览器不支持播放音乐或语音，请在微信或其他浏览器中播放            </span>
+            <span class="db qqmusic_wrp">
+                <span class="db qqmusic_bd">
+                    <span id="qqmusic_play_<#=musicid#>_<#=posIndex#>" class="play_area">
+                        <i class="icon_qqmusic_switch"></i>
+                        <img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_default.2x26f1f1.png" alt="" class="pic_qqmusic_default">
+                        <img src="<#=music_img#>" data-autourl="<#=audiourl#>" data-musicid="<#=musicid#>" class="qqmusic_thumb" alt="">
+                    </span>
+                                        <a id="qqmusic_home_<#=musicid#>_<#=posIndex#>" href="javascript:void(0);" class="access_area">
+                        <span class="qqmusic_songname"><#=music_name#></span>
+                        <span class="qqmusic_singername"><#=singer#></span>
+                        <span class="qqmusic_source"><img src="http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/qqmusic/icon_qqmusic_source263724.png" alt=""></span>
+                    </a>
+                </span>
+            </span>       
+        </span>
+    </script>
+  <script type="text/javascript">
+      var not_in_mm_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/not_in_mm2c9cd6.css";
+      var windowwx_css = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd6.css";
+      var tid = "";
+      var aid = "";
+      var clientversion = "0";
+      var appuin = "MzA4Mjk3Njg4Ng=="||"";
+
+      var source = "23";
+      var scene = 75;
+      
+      var itemidx = "";
+
+      var _copyright_stat = "1";
+      var _ori_article_type = "其他";
+
+      var nickname = "微社区e家通文化车陂";
+      var appmsg_type = "9";
+      var ct = "1457350218";
+      var publish_time = "2016-03-07" || "";
+      var user_name = "gh_28d6c8a1d1f0";
+      var user_name_new = "";
+      var fakeid   = "";
+      var version   = "";
+      var is_limit_user   = "0";
+      var round_head_img = "http://mmbiz.qpic.cn/mmbiz/VY0SoMRLVB5ldqF7FSpx9tAQUjI9ISBUEUID6noTkEUr3bMdrDfrTnvm8ibIy1G7ltQxpIOib2bByuWgApSn3o2Q/0?wx_fmt=png";
+      var msg_title = "他收集有趣的东西，慢慢地自己也成了有趣的故事";
+      var msg_desc = "书法家蔡毅华时刻提醒自己，上课要时刻讲出新意。而他的新意，便是讲孩子们没听过的有趣故事。为了这些故事，他的收藏越来越多，家越来越乱，也越来越古意悠悠。";
+      var msg_cdn_url = "http://mmbiz.qpic.cn/mmbiz/VY0SoMRLVB48SfKU1y47boYc6o7BaRj5JWAqkFZWmLLLEykplyB00RUrDLL03jJg6TViavFibl47qYcSqdLzRRCQ/0?wx_fmt=jpeg";
+      var msg_link = "http://mp.weixin.qq.com/s?__biz=MzA4Mjk3Njg4Ng==&amp;mid=408247359&amp;idx=1&amp;sn=03d83bd9923b94af27958062ca77bfbb#rd";
+      var user_uin = "0"*1;
+      var msg_source_url = '';
+      var img_format = 'jpeg';
+      var srcid = '0307Sf7j6XdFVdyN3XlThFpX';
+      var networkType;
+      var appmsgid = '' || '408247359'|| "";
+      var comment_id = "3292479178" * 1;
+      var comment_enabled = "" * 1;
+      var is_need_reward = "0" * 1;
+      var is_https_res = ("" * 1) && (location.protocol == "https:");
+
+      var devicetype = "";
+      var source_username = "";  
+      var profile_ext_signature = "" || "";
+      var reprint_ticket = "";
+      var source_mid = "";
+      var source_idx = "";
+
+      var show_comment = "";
+      var __appmsgCgiData = {
+            can_use_page : "0"*1,
+            is_wxg_stuff_uin : "0"*1,
+            card_pos : "",
+            copyright_stat : "1",
+            source_biz : "",
+            hd_head_img : "http://wx.qlogo.cn/mmhead/Q3auHgzwzM7OHr1lSZY5N5mdWX9gXwzfmfpsTVBQQo3uJ4rP10xcibw/0"||(window.location.protocol+"//"+window.location.host + "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/appmsg/pic_rumor_link.2x264e76.jpg")
+      };
+      var _empty_v = "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/pic/pages/voice/empty26f1f1.mp3";
+
+      var copyright_stat = "1" * 1;
+
+      var pay_fee = "" * 1;
+      var pay_timestamp = "";
+      var need_pay = "" * 1;
+
+      var need_report_cost = "0" * 1;
+      var use_tx_video_player = "0" * 1;
+
+      var friend_read_source = "" || "";
+      var friend_read_version = "" || "";
+      var friend_read_class_id = "" || "";
+
+      var is_only_read = "1" * 1;
+
+      
+            window.wxtoken = "";
+          if(!!window.__initCatch){
+        window.__initCatch({
+            idkey : 27613,
+            startKey : 0,
+            limit : 128,
+            reportOpt : {
+                uin : uin,
+                biz : biz,
+                mid : mid,
+                idx : idx,
+                sn  : sn
+            },
+            extInfo : {
+                network_rate : 0.01    
+            }
+        });
+    }
+  </script>
+  <script type="text/javascript">
+          seajs.use('appmsg/index.js');
+  </script>
+
+    
+
+
+ 
+</body></html>

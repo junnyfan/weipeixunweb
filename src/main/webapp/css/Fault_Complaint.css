@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+/*重置*/
+
+
+html,body{
+   height: 100%;
+	margin:0;
+
+}
+body{}
+input{
+	border-style:none;
+	outline:none;
+	
+}
+*{
+	margin:0;
+	padding:0;
+	font-size:14px;
+	font-family: Arial, '微软雅黑',sans-serif;
+	font-weight:normal;
+}
+a{
+	text-decoration:none;
+	color:#333;
+}
+img{
+	display:block;
+}
+li{list-style:none;} 
+ul {
+	list-style: none;
+}
+
+
+/*................输入框提示样式.......................*/
+
+
+/* 通用 */
+
+::-webkit-input-placeholder {
+	color: #b3b3b3;
+	font-size: 14px
+}
+
+::-moz-placeholder {
+	color: #b3b3b3;
+	font-size: 14px
+}
+
+
+/* firefox 19+ */
+
+:-ms-input-placeholder {
+	color: #b3b3b3;
+	font-size: 14px
+}
+
+
+/* ie */
+
+input:-moz-placeholder {
+	color: #b3b3b3;
+	font-size: 14px
+}
+
+
+/*................输入框提示样式-结束.......................*/
+
+/*顶部*/ 
+#form_box{overflow: hidden; margin: 15px 0 15px 0; padding-bottom: 55px;}
+#form_box ul{ border-bottom: 1px dashed #f0f0f0; margin-bottom: 10px; }
+#form_box ul select:focus{ border: 1px solid #01B0F1}
+#form_box p{ margin-left: 10px; line-height: 40px;  background: url(../img/bg_icon.png) left no-repeat; text-indent: 28px; font-size: 16px; margin-bottom: 8px; }
+#form_box p span{color: #999;}
+#form_box p i{color:#f64142;font-weight:bold; font-size: 16px}
+#form_box ul li{position: relative; margin-bottom: 12px;}
+#form_box ul li .clear_btn{  position: absolute; top: 50%; margin-top: -12px; height: 24px; width: 24px; right: 9%; display:block; background-color:rgba(0,0,0,0);}
+
+#form_box ul label{ text-align: left; color: #333;margin-left: 8%; width: 22%; display: inline-block;}
+#form_box ul input{ background-color: #fafafa; border:1px solid #ccc; border-radius: 4px; height: 34px; width: 60%; text-indent: 4px;-webkit-appearance: none; box-shadow: 0px 1px 2px #e5e5e5 inset;}
+#form_box ul input:focus{ border: 1px #01b0f1 solid; background: url(../img/clear_icon.png) no-repeat 96% ; background-size: 16px;background-color: #fff; box-shadow: none;  }
+
+
+/*故障地址部分*/   
+#form_box ul select[name=address_disabled]{ background-color:#FFFFFF; border:1px solid #ccc;-webkit-appearance: none; width: 60%; margin-left: 0; height: 32px; border-radius: 4px; text-align: center; padding-left: 4px; color: #999; background: none; background-color: #FAFAFA; }
+#form_box ul select{ background-color:#FFFFFF; border:1px solid #ccc;-webkit-appearance: none; width: 60%;  height: 34px; border-radius: 4px; text-align: center; padding-left: 4px; color: #333; background: url(../img/more_icon.png) no-repeat 92%;background-size: 10px; }
+
+#form_box ul select option{text-align: center; text-indent: 4px;}
+
+#form_box .address_select li{ margin-left: 8%; width: 84%; }
+#form_box .address_select textarea{background-color:#fafafa; border:1px solid #ccc;-webkit-appearance: none;border-radius: 4px; margin-top: 16px;  height: 50px;width: 99%; text-indent: 4px; padding: 0px;line-height: 24px;box-shadow: 0px 1px 2px #e5e5e5 inset;}
+#form_box .address_select textarea:focus{border: 1px #01b0f1 solid;background-color: #fff;  }
+
+/*-------------结束*/
+
+/*故障信息部分*/
+#form_box .fault_information li{ margin-left: 8%; width: 84%; overflow: hidden; text-align: center;}
+#form_box .fault_information li a{display: inline-block; width: 29%; height: 34px; line-height: 34px; border:1px solid #dadada; box-sizing: border-box; text-align: center; border-radius: 4px; color: #666; background-color: #fafafa; }
+.fault_information_ctn1{ float: left;}
+.fault_information_ctn2{ }
+.fault_information_ctn3{ float: right;}
+.fault_information_ctn_addclass{ border: 2px solid #84c101 !important; color: #84C101 !important;  background: url(../img/select_green.png) no-repeat 95% 4px; background-size: 10px;background-color: #fff !important;}
+
+/*---------------结束*/
+
+/*故障类型部分*/
+#form_box .fault_type li{ margin-left: 8%; width: 84%; overflow: hidden; text-align: center;}
+#form_box .fault_type li select{ width: 100%; margin: 0px; height: 34px;}
+#form_box .fault_type li select:focus{ border: 1px solid #01B0F1}
+
+/*---------------------------结束*/
+/*故障描述部分*/
+
+#form_box .fault_account li{ margin-left: 8%; width: 84%;  position: relative;}
+#form_box .fault_account textarea{background-color:#fafafa; border:1px solid #ccc;-webkit-appearance: none;border-radius: 4px;  height: 110px;width: 99%; text-indent: 4px; padding: 0px;line-height: 24px;box-shadow: 0px 1px 2px #e5e5e5 inset;}
+#form_box .fault_account textarea:focus{border: 1px #01b0f1 solid;background-color: #fff;  }
+/*-----------------------结束*/
+
+/*添加照片*/
+.fault_account #photo_select{ background:none; border: none; outline: none; box-shadow: none; -webkit-appearance: none; width: 60%; color: #666; opacity: 0; position: absolute; z-index: -10; height:20px; margin-top: 50px;}
+.add_photo_imgbtn{ margin-top: 10px; width: 60px;opacity: 0.5;}
+.add_photo_imgbtn:hover{transition: 0.3s;-webkit-transition: 0.3s;-ms-transition: 0.2s;opacity:1;}
+.photos_numb{ position: absolute; bottom: 0px; right: 0px; color: #666;}
+.photos_numb span{ color: #84C101; padding: 0 6px 0 6px;}
+
+/*----------------结束------*/
+
+.submit_btn{-webkit-tap-highlight-color:transparent; background-color:#84C101;border: none; font-size: 16px;border-top: 1px solid #ccc; color: #fff; outline: none; width: 100%; height: 42px; position: fixed; bottom: 0px; }
+.submit_btn:active{ background-color:#79a716;border: none; font-size: 16px;border-top: 1px solid #ccc; color: #fff; outline: none; width: 100%; height: 42px; position: fixed; bottom: 0px; }
+
+.tips_box{border-radius:4px; padding: 20px 10px 20px 10px; text-align: center; font-size: 14px; width:40%; background-color: rgba(0,0,0,0.8); color: #fff; position: fixed; top: 45%; left: 50%; margin-left: -20%; }
+
+.user_information i {
+	color:red;
+}
